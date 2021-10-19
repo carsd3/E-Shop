@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(211, 211, 211);
+    margin: 0px;
+    height:100%;
+    width: 100%;
+}
+h1 {
+    position: center;
+    color: rgb(0, 0, 0);
+} 
+
+a {
+    text-decoration: none;
+    text-transform: none;
+    overflow: auto;
+    color: black;
+}
