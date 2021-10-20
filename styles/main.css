@@ -1,16 +1,20 @@
 body {
     background-color: rgb(241, 240, 240);
-    margin: 0px;
+    margin-left: 1vw;
+    margin-right: 1vw;
     height:100%;
     width: 100%;
 }
 
-hr {
-    margin-left: 1vw;
-    margin-right: 1vw;
+
+@font-face { 
+    font-family: Alexandria; 
+    src: url("../fonts/AlexandriaFLF.ttf");
 }
 
 h1 {
+    font-family: Alexandria;
+    margin-top: 4vh;
     width:fit-content;
     color: rgb(0, 0, 0);
 } 
