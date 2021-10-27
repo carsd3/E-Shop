@@ -1,3 +1,8 @@
+html{
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+
 body {
     background-color: rgb(241, 240, 240);
     margin-left: 1vw;
@@ -22,10 +27,36 @@ h1 {
 a {
     text-decoration: none;
     text-transform:none;
+    color: rgb(0, 0, 0);
 }
 
 #head {
     display:flex;
     justify-content:flex-start;
     align-items: flex-start;
+}
+
+.tab{
+    margin-top: 4vh;
+    display: flex;
+    font-family: Alexandria;
+    flex-direction: row;
+    width:fit-content;
+    margin-left: 40vh;
+    border-color: black;
+}
+
+#tabs{
+    border:solid;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 0px;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    margin-right: 5px;
+}
+
+hr {
+    margin-top: 0px;
 }
