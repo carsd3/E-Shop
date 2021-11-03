@@ -3,3 +3,14 @@
     width:10vh;
     margin:10px;
 }
+
+#side{
+    margin-top: 10px;
+    height:max-content;
+}
+
+table, th, td {
+    border:1px groove black;
+    border-collapse: collapse;
+    width:30%;
+}
