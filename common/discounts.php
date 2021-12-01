@@ -10,7 +10,7 @@
         <meta name="theme-color" content="#ffffff">
         <link rel="stylesheet" href="../styles/main.css" />
         <link rel="stylesheet" href="../styles/page2.css" />
-        <title>Account</title>
+        <title>Discounts</title>
     </head>
     <body>
         <div id="head">
@@ -19,21 +19,27 @@
             </a>
             <h1 class = "title">Hello World!</h1>
             <div class="tab">
-                <a id = "tabs" href = "../common/discounts.html"> 
+                <a id = "tabs" href = "discounts.php">
                     <h2>Discounts</h2>
                 </a>
-                <a id = "tabs" href = "../common/products.html"> 
+                <a id = "tabs" href = "products.php">
                     <h2>Products</h2>
                 </a>
-                <a id = "tabs" href = "../common/about.html"> 
+                <a id = "tabs" href = "about.php">
                     <h2>About</h2>
                 </a>
-                <a id = "tabs" href = "../common/contact_us.html"> 
+                <a id = "tabs" href = "contact_us.php">
                     <h2>Contact Us</h2>
                 </a>
-                <a id = "tabs" href = "../common/account.html"> 
+                <a id = "tabs" href = "account.php">
                     <h2>Account</h2>
                 </a>
+            </div>
+            <div class="searchbar">
+                <form action="../scripts/search.php" method="GET">
+	                <input type="text" name="query" />
+	                <input type="submit" value="Search" />
+                </form>
             </div>  
         </div>
         <hr>

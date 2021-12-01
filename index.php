@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang = 'en'>
     <head>
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-        <link rel="manifest" href="img/favicon/site.webmanifest">
-        <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
         <link rel="stylesheet" href="styles/main.css" />
@@ -19,35 +19,35 @@
             </a>
             <h1 class = "title">Hello World!</h1>
             <div class="tab">
-                <a id = "tabs" href = "common/discounts.html">
+                <a id = "tabs" href = "common/discounts.php">
                     <h2>Discounts</h2>
                 </a>
-                <a id = "tabs" href = "common/products.html">
+                <a id = "tabs" href = "common/products.php">
                     <h2>Products</h2>
                 </a>
-                <a id = "tabs" href = "common/about.html">
+                <a id = "tabs" href = "common/about.php">
                     <h2>About</h2>
                 </a>
-                <a id = "tabs" href = "common/contact_us.html">
+                <a id = "tabs" href = "common/contact_us.php">
                     <h2>Contact Us</h2>
                 </a>
-                <a id = "tabs" href = "common/account.html">
+                <a id = "tabs" href = "common/account.php">
                     <h2>Account</h2>
                 </a>
             </div>
             <div class="searchbar">
-                <form action="common/products.html" method="post">
-                    <input type="text" name="search">
-                    <input type="submit">
+                <form action="./scripts/search.php" method="GET">
+	                <input type="text" name="query" />
+	                <input type="submit" value="Search" />
                 </form>
             </div>
         </div>
 
         <hr>
 
-        <p>
-            Hola
-        </p>
+        <div class = "products">
+            
+        </div>
 
     </body>
 </html>

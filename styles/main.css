@@ -1,5 +1,6 @@
 html{
     margin-left: 10vh;
+    scroll-behavior: smooth;
     margin-right: 10vh;
 }
 
@@ -64,3 +65,4 @@ hr {
 .searchbar{
     margin-top: 7vh;
 }
+
