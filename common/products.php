@@ -60,11 +60,12 @@
             <?php
             while ($row = mysqli_fetch_array($result)) {
               ?>
-              <div id = "result">
-                <img src = "../img/<?php echo $row['Name']?>.jpg" alt = "a">
-                <br>
-                <p><?php echo $row['Name']?></p>
-              </div>
+                <form id="result" action="../scripts/product.php" method="GET">
+                  <input type = "image" src = "../img/<?php echo $row['Name']?>.jpg" alt = "a">
+                  <input type = "hidden" name = "product" value = "<?php echo $row['ProductID'] ?>">
+                  <br>
+                  <p><?php echo $row['Name']?></p>
+                </form>
             <?php
             }
             ?>

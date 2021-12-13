@@ -58,9 +58,60 @@
             </div>  
         </div>
         <hr>
-        <img src = "../img/<?php echo $row['Name']?>.jpg" alt = "a">
-        <?php
-          mysqli_close($con);
-        ?>
+        <div id = 'box'>
+            <img src = "../img/<?php echo $row['Name']?>.jpg" alt = "a">
+            <div id = 'inner_box'>
+                <div id = 'row'>
+                    <h3>Title:   </h3><p id = 'con'> <?php echo $row['Name']; ?> </p>
+                </div>
+                <div id = 'row'>
+                    <h3>Author:   </h3><p id = 'con'> <?php echo $row['Author']; ?> </p>
+                </div>
+                <div id = 'row'>
+                    <h3>Category:   </h3><p id = 'con'> <?php echo $row['Category']; ?> </p>
+                </div>
+                <div id = 'row'>
+                    <h3>Price:   </h3><p id = 'con'> <?php echo $row['Price'] . "€"; ?> </p>
+                </div>
+                <div id = 'row'>
+                    <h3>Number of Items:   </h3><p id = 'con'> <?php echo $row['Number of Items']; ?> </p>
+                </div>
+            </div>    
+
+        </div>
+        <br>
+        <div id ='des'>
+            <h3>
+                Description:
+            </h3><br>
+            <?php echo $row['Description']; ?>
+        </div>
+        <br><br>
+        <div id = 'next'>
+            <?php
+                if (($row['ProductID']-1) != 0){
+                    ?>
+                    <form action="product.php" method="GET">
+                        <input type = "submit" value = "< Previous">
+                        <input type = "hidden" name = "product" value = "<?php echo ($row['ProductID'] - 1)?>">
+                    </form>
+                    <?php
+                }
+                $a =mysqli_query($con, "SELECT MAX(ProductID) FROM products");
+                $a = $a -> fetch_array();
+                $max = intval($a[0]);
+                if ($max >= ($row['ProductID']+1)){
+                    ?>
+                    <form action="product.php" method="GET">
+                        <input type = "submit" value = "Next >">
+                        <input type = "hidden" name = "product" value = "<?php echo ($row['ProductID'] + 1)?>">
+                    </form>
+                    <?php
+                }
+            ?>
+        </div>
     </body>
+    <?php
+          mysqli_close($con);
+    ?>
 </html>

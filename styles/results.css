@@ -21,6 +21,6 @@
     margin:5px;
     font-family: Alexandria;
     display:flex;
-    flex-direction: column;
+    flex-flow:wrap column;
     align-items: center;
 }

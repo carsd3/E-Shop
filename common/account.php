@@ -43,5 +43,8 @@
             </div>  
         </div>
         <hr>
+        <div id = 'account'>
+            
+        </div>
     </body>
 </html>
