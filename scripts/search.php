@@ -25,11 +25,11 @@
                 <a id = "tabs" href = "../common/products.php">
                     <h2>Products</h2>
                 </a>
-                <a id = "tabs" href = "../common/about.php">
-                    <h2>About</h2>
-                </a>
                 <a id = "tabs" href = "../common/contact_us.php">
                     <h2>Contact Us</h2>
+                </a>
+                <a id = "tabs" href = "../common/about.php">
+                    <h2>About</h2>
                 </a>
                 <a id = "tabs" href = "../common/account.php">
                     <h2>Account</h2>
@@ -43,12 +43,14 @@
             </div>
         </div>
         <hr>
-      <h1 style="font-weight:bold">
-        Results
-      </h1>
         <?php
           $con= new mysqli("localhost","root","","e-shop");
           $name = $_GET['query'];
+        ?> 
+        <h1 style="font-weight:bold">
+          Results for "<?php echo $name; ?>"
+        </h1>
+        <?php
           // Check connection
           if (mysqli_connect_errno()) {
             echo "Failed to connect to MySQL: " . mysqli_connect_error();

@@ -40,11 +40,11 @@
                 <a id = "tabs" href = "../common/products.php">
                     <h2>Products</h2>
                 </a>
-                <a id = "tabs" href = "../common/about.php">
-                    <h2>About</h2>
-                </a>
                 <a id = "tabs" href = "../common/contact_us.php">
                     <h2>Contact Us</h2>
+                </a>
+                <a id = "tabs" href = "../common/about.php">
+                    <h2>About</h2>
                 </a>
                 <a id = "tabs" href = "../common/account.php">
                     <h2>Account</h2>

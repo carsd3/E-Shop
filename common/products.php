@@ -25,11 +25,11 @@
                 <a id = "tabs" href = "products.php">
                     <h2>Products</h2>
                 </a>
-                <a id = "tabs" href = "about.php">
-                    <h2>About</h2>
-                </a>
                 <a id = "tabs" href = "contact_us.php">
                     <h2>Contact Us</h2>
+                </a>
+                <a id = "tabs" href = "about.php">
+                    <h2>About</h2>
                 </a>
                 <a id = "tabs" href = "account.php">
                     <h2>Account</h2>
