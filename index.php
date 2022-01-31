@@ -1,3 +1,10 @@
+<?php
+require_once "/common/functions.php";
+session_start();
+// if (isset($_SESSION["a"])) {
+//     echo $_SESSION["a"];
+// }
+?>
 <!DOCTYPE html>
 <html lang = 'en'>
     <head>
@@ -14,13 +21,15 @@
     </head>
     <body>
         <div id="head">
-            <a class = "link" href="index.php">
-                <img class = "start" src = "img/icon.jpg" alt = "test">
-            </a>
-            <h1 class = "title">Hello World!</h1>
+            <div class='tab'>    
+                <a class = "link" href="index.php">
+                    <img class = "start" src = "img/icon.jpg" alt = "test">
+                </a>
+                <h1 class = "title">Hello World!</h1>
+            </div>
             <div class="tab">
-                <a id = "tabs" href = "common/discounts.php">
-                    <h2>Discounts</h2>
+                <a id = "tabs" href = "common/cart.php">
+                    <h2>Cart</h2>
                 </a>
                 <a id = "tabs" href = "common/products.php">
                     <h2>Products</h2>
@@ -28,26 +37,26 @@
                 <a id = "tabs" href = "common/contact_us.php">
                     <h2>Contact Us</h2>
                 </a>
-                <a id = "tabs" href = "common/about.php">
-                    <h2>About</h2>
-                </a>
-                <a id = "tabs" href = "common/account.php">
-                    <h2>Account</h2>
-                </a>
-            </div>
-            <div class="searchbar">
-                <form action="./scripts/search.php" method="GET">
-	                <input type="text" name="query" />
-	                <input type="submit" value="Search" />
-                </form>
+                <?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true):?>
+                    <a id = 'tabs' href = "common/login_info.php"><h2>My Account</h2></a>
+                    <a id = 'tabs' href = "common/logout.php"><h2>Logout</h2></a>
+                <?php else: ?>
+                    <a id = "tabs" href = "common/account.php">
+                        <h2>Account</h2>
+                    </a>
+                <?php endif;?>
+                <div class="searchbar">
+                    <form action="./common/search.php" method="GET">
+	                    <input type="text" name="query" />
+	                    <input type="submit" value="Search" />
+                    </form>
+                </div>
             </div>
         </div>
 
         <hr>
 
-        <div class = "products">
-            
-        </div>
+        <img src = "img/book.jpeg" alt = "book">
 
     </body>
 </html>

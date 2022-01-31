@@ -33,17 +33,15 @@ a {
 
 #head {
     display:flex;
-    justify-content:flex-start;
-    align-items: flex-start;
+    justify-content:space-between;
+    align-items:flex-end;
 }
 
 .tab{
-    margin-top: 4vh;
     display: flex;
     font-family: Alexandria;
     flex-direction: row;
     width:fit-content;
-    margin-left: 40vh;
     border-color: black;
 }
 
@@ -63,6 +61,6 @@ hr {
 }
 
 .searchbar{
-    margin-top: 7vh;
+    margin-top: 3vh;
+    align-self:baseline;
 }
-
